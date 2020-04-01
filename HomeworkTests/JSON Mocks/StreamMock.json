@@ -1,0 +1,18 @@
+{
+  "data": {
+    "type": "streamings",
+    "id": "f2edcc3c-152a-4dc5-848a-b4ffef74c742",
+    "heartbeat": {},
+    "stream_infos": [
+      {
+        "player": "ios:PD-NONE",
+        "display_aspect_ratio": "1.777777777777778",
+        "all_subtitles": [],
+        "cdn": "LIMELIGH",
+        "url": "https://prod-stpeter-pmd.limelight.cdn.rakuten.tv/c/b/f/cbfe8f488f44a1b76e8e_SS_16_9_432p_1100_MP30_PAR1_ch/cbfe8f488f44a1b76e8e_SS_16_9_432p_1100_MP30_PAR1_ch.mp4?e=1585262301&h=1ddd9f5800bdac7d3e530c5038ce518a",
+        "wrid": "92887f60-eb07-411a-bc59-bfe48b4ef285",
+        "video_quality": "SD"
+      }
+    ]
+  }
+}

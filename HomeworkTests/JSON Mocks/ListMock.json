@@ -1,0 +1,1748 @@
+{
+  "data": {
+    "type": "lists",
+    "id": "estrenos-imprescindibles-en-taquilla",
+    "numerical_id": 4665,
+    "category": null,
+    "short_name": "Imprescindibles",
+    "content_type": "Movie",
+    "is_b2b": false,
+    "wktv_code": null,
+    "only_coupon": false,
+    "kind": "regular",
+    "is_recommendation": false,
+    "name": "Estrenos imprescindibles en TAQUILLA",
+    "additional_images": {},
+    "contents": {
+      "data": [
+        {
+          "type": "movies",
+          "id": "frozen-ii",
+          "numerical_id": 113416,
+          "title": "Frozen II",
+          "year": 2019,
+          "duration": 103,
+          "label": "3,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "1",
+            "numerical_id": 1,
+            "name": "T",
+            "age": 0,
+            "adult": false,
+            "description": "Mostrar sólo contenidos autorizados para todos los públicos",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-3.wuaki.tv/system/artworks/113416/master/frozen-ii-1581665707.jpeg",
+            "snapshot": "https://images-3.wuaki.tv/system/shots/168614/original/frozen-ii-1581667088.jpeg",
+            "ribbons": []
+          },
+          "highlighted_score": {
+            "score": 7.1,
+            "amount_of_votes": 2939,
+            "formatted_amount_of_votes": "2,9K"
+          },
+          "rating": {
+            "average": 4,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "joker",
+          "numerical_id": 111608,
+          "title": "Joker",
+          "year": 2019,
+          "duration": 121,
+          "label": "4,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "5",
+            "numerical_id": 5,
+            "name": "18",
+            "age": 18,
+            "adult": false,
+            "description": "Mostrar todos los contenidos, excluyendo los clasificados para adultos",
+            "default": true
+          },
+          "images": {
+            "artwork": "https://images-2.wuaki.tv/system/artworks/111608/master/joker-1580807677.jpeg",
+            "snapshot": "https://images-3.wuaki.tv/system/shots/157932/original/joker-1571894175.jpeg",
+            "ribbons": [
+              {
+                "type": "ribbons",
+                "id": "6",
+                "numerical_id": 6,
+                "name": "UHD",
+                "color": "#ffcc00",
+                "text_color": "#000000",
+                "position": "top-left",
+                "localized_name": "UHD",
+                "image": "https://images-1.wuaki.tv/system/images/6/original/uhd-1418228576.png"
+              }
+            ]
+          },
+          "highlighted_score": {
+            "score": 8.6,
+            "amount_of_votes": 3864,
+            "formatted_amount_of_votes": "3,9K"
+          },
+          "rating": {
+            "average": 5,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "si-yo-fuera-rico",
+          "numerical_id": 115299,
+          "title": "Si yo fuera rico",
+          "year": 2019,
+          "duration": 94,
+          "label": "11,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "8",
+            "numerical_id": 8,
+            "name": "16",
+            "age": 16,
+            "adult": false,
+            "description": "Mostrar sólo los contenidos autorizados para los niños de hasta 16 años",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-0.wuaki.tv/system/artworks/115299/master/si-yo-fuera-rico-1582277114.jpeg",
+            "snapshot": "https://images-2.wuaki.tv/system/shots/173463/original/si-yo-fuera-rico-1584639718.jpeg",
+            "ribbons": []
+          },
+          "highlighted_score": {
+            "score": 6.9,
+            "amount_of_votes": 14,
+            "formatted_amount_of_votes": "14"
+          },
+          "rating": {
+            "average": 4,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "malefica-maestra-del-mal",
+          "numerical_id": 111689,
+          "title": "Maléfica: Maestra del mal",
+          "year": 2019,
+          "duration": 118,
+          "label": "3,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "3",
+            "numerical_id": 3,
+            "name": "7",
+            "age": 7,
+            "adult": false,
+            "description": "Mostrar sólo los contenidos autorizados para niños de hasta 7 años",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-1.wuaki.tv/system/artworks/111689/master/malefica-maestra-del-mal-1578472433.jpeg",
+            "snapshot": "https://images-1.wuaki.tv/system/shots/163030/original/malefica-maestra-del-mal-1578472086.jpeg",
+            "ribbons": []
+          },
+          "highlighted_score": {
+            "score": 7.2,
+            "amount_of_votes": 1964,
+            "formatted_amount_of_votes": "2K"
+          },
+          "rating": {
+            "average": 4,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "le-mans-66",
+          "numerical_id": 115659,
+          "title": "Le Mans '66",
+          "year": 2019,
+          "duration": 152,
+          "label": "4,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "3",
+            "numerical_id": 3,
+            "name": "7",
+            "age": 7,
+            "adult": false,
+            "description": "Mostrar sólo los contenidos autorizados para niños de hasta 7 años",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-2.wuaki.tv/system/artworks/115659/master/le-mans-66-1581333450.jpeg",
+            "snapshot": "https://images-3.wuaki.tv/system/shots/167693/original/le-mans-66-1581333244.jpeg",
+            "ribbons": [
+              {
+                "type": "ribbons",
+                "id": "6",
+                "numerical_id": 6,
+                "name": "UHD",
+                "color": "#ffcc00",
+                "text_color": "#000000",
+                "position": "top-left",
+                "localized_name": "UHD",
+                "image": "https://images-1.wuaki.tv/system/images/6/original/uhd-1418228576.png"
+              }
+            ]
+          },
+          "highlighted_score": {
+            "score": 7.8,
+            "amount_of_votes": 1893,
+            "formatted_amount_of_votes": "1,9K"
+          },
+          "rating": {
+            "average": 4,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "last-christmas",
+          "numerical_id": 118461,
+          "title": "Last Christmas",
+          "year": 2019,
+          "duration": 102,
+          "label": "9,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "3",
+            "numerical_id": 3,
+            "name": "7",
+            "age": 7,
+            "adult": false,
+            "description": "Mostrar sólo los contenidos autorizados para niños de hasta 7 años",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-1.wuaki.tv/system/artworks/118461/master/last-christmas-1580899639.jpeg",
+            "snapshot": "https://images-0.wuaki.tv/system/shots/167127/original/last-christmas-1580899663.jpeg",
+            "ribbons": [
+              {
+                "type": "ribbons",
+                "id": "6",
+                "numerical_id": 6,
+                "name": "UHD",
+                "color": "#ffcc00",
+                "text_color": "#000000",
+                "position": "top-left",
+                "localized_name": "UHD",
+                "image": "https://images-1.wuaki.tv/system/images/6/original/uhd-1418228576.png"
+              }
+            ]
+          },
+          "highlighted_score": {
+            "score": 7.0,
+            "amount_of_votes": 612,
+            "formatted_amount_of_votes": "612"
+          },
+          "rating": {
+            "average": 4,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "parasitos",
+          "numerical_id": 117757,
+          "title": "Parásitos",
+          "year": 2019,
+          "duration": 131,
+          "label": "3,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "8",
+            "numerical_id": 8,
+            "name": "16",
+            "age": 16,
+            "adult": false,
+            "description": "Mostrar sólo los contenidos autorizados para los niños de hasta 16 años",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-1.wuaki.tv/system/artworks/117757/master/parasitos-1580991019.jpeg",
+            "snapshot": "https://images-0.wuaki.tv/system/shots/167400/original/parasitos-1580991001.jpeg",
+            "ribbons": []
+          },
+          "highlighted_score": {
+            "score": 8.6,
+            "amount_of_votes": 3144,
+            "formatted_amount_of_votes": "3,1K"
+          },
+          "rating": {
+            "average": 5,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "geminis",
+          "numerical_id": 114950,
+          "title": "Géminis",
+          "year": 2019,
+          "duration": 117,
+          "label": "3,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "7",
+            "numerical_id": 7,
+            "name": "12",
+            "age": 12,
+            "adult": false,
+            "description": "Mostrar sólo los contenidos autorizados para los niños de hasta 12 años",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-0.wuaki.tv/system/artworks/114950/master/geminis-1576663586.jpeg",
+            "snapshot": "https://images-2.wuaki.tv/system/shots/161832/original/geminis-1576663449.jpeg",
+            "ribbons": [
+              {
+                "type": "ribbons",
+                "id": "6",
+                "numerical_id": 6,
+                "name": "UHD",
+                "color": "#ffcc00",
+                "text_color": "#000000",
+                "position": "top-left",
+                "localized_name": "UHD",
+                "image": "https://images-1.wuaki.tv/system/images/6/original/uhd-1418228576.png"
+              }
+            ]
+          },
+          "highlighted_score": {
+            "score": 5.9,
+            "amount_of_votes": 1459,
+            "formatted_amount_of_votes": "1,5K"
+          },
+          "rating": {
+            "average": 3,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "terminator-destino-oscuro",
+          "numerical_id": 115660,
+          "title": "Terminator: Destino Oscuro",
+          "year": 2019,
+          "duration": 128,
+          "label": "4,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "7",
+            "numerical_id": 7,
+            "name": "12",
+            "age": 12,
+            "adult": false,
+            "description": "Mostrar sólo los contenidos autorizados para los niños de hasta 12 años",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-3.wuaki.tv/system/artworks/115660/master/terminator-destino-oscuro-1581367866.jpeg",
+            "snapshot": "https://images-2.wuaki.tv/system/shots/167842/original/terminator-destino-oscuro-1581368082.jpeg",
+            "ribbons": [
+              {
+                "type": "ribbons",
+                "id": "6",
+                "numerical_id": 6,
+                "name": "UHD",
+                "color": "#ffcc00",
+                "text_color": "#000000",
+                "position": "top-left",
+                "localized_name": "UHD",
+                "image": "https://images-1.wuaki.tv/system/images/6/original/uhd-1418228576.png"
+              }
+            ]
+          },
+          "highlighted_score": {
+            "score": 6.3,
+            "amount_of_votes": 1724,
+            "formatted_amount_of_votes": "1,7K"
+          },
+          "rating": {
+            "average": 4,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "la-familia-addams-2019",
+          "numerical_id": 117749,
+          "title": "La familia Addams (2019)",
+          "year": 2019,
+          "duration": 86,
+          "label": "4,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "3",
+            "numerical_id": 3,
+            "name": "7",
+            "age": 7,
+            "adult": false,
+            "description": "Mostrar sólo los contenidos autorizados para niños de hasta 7 años",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-3.wuaki.tv/system/artworks/117749/master/la-familia-addams-2019-1580112287.jpeg",
+            "snapshot": "https://images-3.wuaki.tv/system/shots/165238/original/the-addams-family-1580110726.jpeg",
+            "ribbons": [
+              {
+                "type": "ribbons",
+                "id": "6",
+                "numerical_id": 6,
+                "name": "UHD",
+                "color": "#ffcc00",
+                "text_color": "#000000",
+                "position": "top-left",
+                "localized_name": "UHD",
+                "image": "https://images-1.wuaki.tv/system/images/6/original/uhd-1418228576.png"
+              }
+            ]
+          },
+          "highlighted_score": {
+            "score": 6.2,
+            "amount_of_votes": 630,
+            "formatted_amount_of_votes": "630"
+          },
+          "rating": {
+            "average": 4,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "abominable-2019",
+          "numerical_id": 114379,
+          "title": "Abominable (2019)",
+          "year": 2019,
+          "duration": 97,
+          "label": "3,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "1",
+            "numerical_id": 1,
+            "name": "T",
+            "age": 0,
+            "adult": false,
+            "description": "Mostrar sólo contenidos autorizados para todos los públicos",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-1.wuaki.tv/system/artworks/114379/master/abominable-2019-1575383024.jpeg",
+            "snapshot": "https://images-1.wuaki.tv/system/shots/160880/original/abominable-2019-1575383259.jpeg",
+            "ribbons": [
+              {
+                "type": "ribbons",
+                "id": "6",
+                "numerical_id": 6,
+                "name": "UHD",
+                "color": "#ffcc00",
+                "text_color": "#000000",
+                "position": "top-left",
+                "localized_name": "UHD",
+                "image": "https://images-1.wuaki.tv/system/images/6/original/uhd-1418228576.png"
+              }
+            ]
+          },
+          "highlighted_score": {
+            "score": 7.1,
+            "amount_of_votes": 495,
+            "formatted_amount_of_votes": "495"
+          },
+          "rating": {
+            "average": 4,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "la-trinchera-infinita",
+          "numerical_id": 117755,
+          "title": "La trinchera infinita",
+          "year": 2019,
+          "duration": 147,
+          "label": "3,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "8",
+            "numerical_id": 8,
+            "name": "16",
+            "age": 16,
+            "adult": false,
+            "description": "Mostrar sólo los contenidos autorizados para los niños de hasta 16 años",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-0.wuaki.tv/system/artworks/117755/master/la-trinchera-infinita-1580893942.jpeg",
+            "snapshot": "https://images-3.wuaki.tv/system/shots/167112/original/la-trinchera-infinita-1580894371.jpeg",
+            "ribbons": []
+          },
+          "highlighted_score": {
+            "score": 7.2,
+            "amount_of_votes": 51,
+            "formatted_amount_of_votes": "51"
+          },
+          "rating": {
+            "average": 4,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "estafadoras-de-wall-street",
+          "numerical_id": 115174,
+          "title": "Estafadoras de Wall Street",
+          "year": 2019,
+          "duration": 109,
+          "label": "3,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "5",
+            "numerical_id": 5,
+            "name": "18",
+            "age": 18,
+            "adult": false,
+            "description": "Mostrar todos los contenidos, excluyendo los clasificados para adultos",
+            "default": true
+          },
+          "images": {
+            "artwork": "https://images-2.wuaki.tv/system/artworks/115174/master/estafadoras-de-wall-street-1581603362.jpeg",
+            "snapshot": "https://images-0.wuaki.tv/system/shots/168549/original/estafadoras-de-wall-street-1581603379.jpeg",
+            "ribbons": []
+          },
+          "highlighted_score": {
+            "score": 6.3,
+            "amount_of_votes": 1003,
+            "formatted_amount_of_votes": "1K"
+          },
+          "rating": {
+            "average": 4,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "rambo-last-blood",
+          "numerical_id": 114032,
+          "title": "Rambo: Last Blood",
+          "year": 2019,
+          "duration": 96,
+          "label": "2,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "5",
+            "numerical_id": 5,
+            "name": "18",
+            "age": 18,
+            "adult": false,
+            "description": "Mostrar todos los contenidos, excluyendo los clasificados para adultos",
+            "default": true
+          },
+          "images": {
+            "artwork": "https://images-1.wuaki.tv/system/artworks/114032/master/rambo-last-blood-1578656773.jpeg",
+            "snapshot": "https://images-3.wuaki.tv/system/shots/163637/original/rambo-last-blood-1578656794.jpeg",
+            "ribbons": []
+          },
+          "highlighted_score": {
+            "score": 5.9,
+            "amount_of_votes": 610,
+            "formatted_amount_of_votes": "610"
+          },
+          "rating": {
+            "average": 3,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "ad-astra",
+          "numerical_id": 113414,
+          "title": "Ad Astra",
+          "year": 2019,
+          "duration": 123,
+          "label": "4,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "3",
+            "numerical_id": 3,
+            "name": "7",
+            "age": 7,
+            "adult": false,
+            "description": "Mostrar sólo los contenidos autorizados para niños de hasta 7 años",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-3.wuaki.tv/system/artworks/113414/master/ad-astra-1576669986.jpeg",
+            "snapshot": "https://images-2.wuaki.tv/system/shots/161864/original/ad-astra-1576669842.jpeg",
+            "ribbons": [
+              {
+                "type": "ribbons",
+                "id": "6",
+                "numerical_id": 6,
+                "name": "UHD",
+                "color": "#ffcc00",
+                "text_color": "#000000",
+                "position": "top-left",
+                "localized_name": "UHD",
+                "image": "https://images-1.wuaki.tv/system/images/6/original/uhd-1418228576.png"
+              }
+            ]
+          },
+          "highlighted_score": {
+            "score": 6.0,
+            "amount_of_votes": 2434,
+            "formatted_amount_of_votes": "2,4K"
+          },
+          "rating": {
+            "average": 3,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "doctor-sueno",
+          "numerical_id": 112604,
+          "title": "Doctor Sueño",
+          "year": 2019,
+          "duration": 152,
+          "label": "4,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "8",
+            "numerical_id": 8,
+            "name": "16",
+            "age": 16,
+            "adult": false,
+            "description": "Mostrar sólo los contenidos autorizados para los niños de hasta 16 años",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-3.wuaki.tv/system/artworks/112604/master/doctor-sueno-1578926075.jpeg",
+            "snapshot": "https://images-0.wuaki.tv/system/shots/163812/original/doctor-sueno-1578926054.jpeg",
+            "ribbons": [
+              {
+                "type": "ribbons",
+                "id": "6",
+                "numerical_id": 6,
+                "name": "UHD",
+                "color": "#ffcc00",
+                "text_color": "#000000",
+                "position": "top-left",
+                "localized_name": "UHD",
+                "image": "https://images-1.wuaki.tv/system/images/6/original/uhd-1418228576.png"
+              }
+            ]
+          },
+          "highlighted_score": {
+            "score": 7.1,
+            "amount_of_votes": 1251,
+            "formatted_amount_of_votes": "1,3K"
+          },
+          "rating": {
+            "average": 4,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "zombieland-mata-y-remata",
+          "numerical_id": 110776,
+          "title": "Zombieland: Mata y remata",
+          "year": 2019,
+          "duration": 99,
+          "label": "3,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "8",
+            "numerical_id": 8,
+            "name": "16",
+            "age": 16,
+            "adult": false,
+            "description": "Mostrar sólo los contenidos autorizados para los niños de hasta 16 años",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-0.wuaki.tv/system/artworks/110776/master/zombieland-mata-y-remata-1579518126.jpeg",
+            "snapshot": "https://images-1.wuaki.tv/system/shots/164509/original/zombieland-mata-y-remata-1579518222.jpeg",
+            "ribbons": [
+              {
+                "type": "ribbons",
+                "id": "6",
+                "numerical_id": 6,
+                "name": "UHD",
+                "color": "#ffcc00",
+                "text_color": "#000000",
+                "position": "top-left",
+                "localized_name": "UHD",
+                "image": "https://images-1.wuaki.tv/system/images/6/original/uhd-1418228576.png"
+              }
+            ]
+          },
+          "highlighted_score": {
+            "score": 6.9,
+            "amount_of_votes": 1605,
+            "formatted_amount_of_votes": "1,6K"
+          },
+          "rating": {
+            "average": 4,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        },
+        {
+          "type": "movies",
+          "id": "quien-a-hierro-mata",
+          "numerical_id": 113420,
+          "title": "Quien a hierro mata",
+          "year": 2019,
+          "duration": 108,
+          "label": "3,99 €",
+          "classification": {
+            "type": "classifications",
+            "id": "8",
+            "numerical_id": 8,
+            "name": "16",
+            "age": 16,
+            "adult": false,
+            "description": "Mostrar sólo los contenidos autorizados para los niños de hasta 16 años",
+            "default": false
+          },
+          "images": {
+            "artwork": "https://images-2.wuaki.tv/system/artworks/113420/master/quien-a-hierro-mata-1577790279.jpeg",
+            "snapshot": "https://images-2.wuaki.tv/system/shots/162428/original/quien-a-hierro-mata-1577790427.jpeg",
+            "ribbons": []
+          },
+          "highlighted_score": {
+            "score": 6.4,
+            "amount_of_votes": 70,
+            "formatted_amount_of_votes": "70"
+          },
+          "rating": {
+            "average": 4,
+            "scale": 5
+          },
+          "labels": {
+            "audio_qualities": [
+              {
+                "type": "audio_qualities",
+                "id": "2.0",
+                "numerical_id": 2,
+                "name": "2.0 (Stereo)",
+                "abbr": "2.0",
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/2-0-stereo-1456155689.png"
+              }
+            ],
+            "hdr_types": [
+              {
+                "type": "hdr_types",
+                "id": "NONE",
+                "numerical_id": 1,
+                "name": "SDR",
+                "abbr": "NONE",
+                "image": null
+              }
+            ],
+            "purchase_types": [
+              {
+                "type": "purchase_types",
+                "id": "1",
+                "numerical_id": 1,
+                "is_recurring": false,
+                "name": "Alquiler 48H",
+                "label": "ALQUILER 48H",
+                "kind": "rental",
+                "expires_after_in_seconds": 172800,
+                "available_time_in_seconds": 172800
+              },
+              {
+                "type": "purchase_types",
+                "id": "2",
+                "numerical_id": 2,
+                "is_recurring": false,
+                "name": "Venta (Digital Locker)",
+                "label": "VENTA (DIGITAL LOCKER)",
+                "kind": "purchase",
+                "expires_after_in_seconds": null,
+                "available_time_in_seconds": null
+              }
+            ],
+            "video_qualities": [
+              {
+                "type": "video_qualities",
+                "id": "SD",
+                "numerical_id": 2,
+                "name": "SD",
+                "abbr": "SD",
+                "position": 0,
+                "image": "https://images-1.wuaki.tv/system/logos/2/original/sd-1456155688.png"
+              }
+            ]
+          }
+        }
+      ],
+      "meta": {
+        "pagination": {
+          "page": 1,
+          "count": 21,
+          "per_page": 18,
+          "offset": 0,
+          "total_pages": 2
+        }
+      }
+    }
+  }
+}

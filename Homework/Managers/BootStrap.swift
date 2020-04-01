@@ -8,8 +8,8 @@
 
 import Foundation
 
-// just easy way to mock the singletons for tests
-// Anyway this pointer to singletons needs to always be in memory
+/// just easy way to mock the singletons for tests
+/// Anyway this pointer to singletons needs to always be in memory
 var globalBootStrap = BootStrap()
 
 var isNotUnitTest: Bool {
@@ -48,7 +48,6 @@ final class BootStrap {
     var currentSetUp: SetUpType {
         return _currentSetUp
     }
-
 
     // DI support for tests
     init(networkManager: NetworkManager = NetworkManager(), router: Router = Router(), setUp: SetUpType = .test) {

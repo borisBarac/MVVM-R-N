@@ -8,18 +8,78 @@
 
 import Foundation
 
-struct MainJson: Codable {
-    let items: [Item]
+struct ListJson: Codable, Hashable {
+    let data: JsonData
+
+    struct JsonData: Codable {
+        let type: String
+        let id: String
+        let numerical_id: Int64
+
+        let contents: Contents
+
+        struct Contents: Codable {
+            let data: [Item]
+        }
+    }
+
+    // should not be compared
+    static func == (lhs: ListJson, rhs: ListJson) -> Bool {
+        return false
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(data.id)
+    }
 }
 
-struct DetailJson: Codable {
-    let item: Item
+struct DetailJson: Codable, Hashable {
+    let data: Item
+
+    // should not be compared
+    static func == (lhs: DetailJson, rhs: DetailJson) -> Bool {
+        return false
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(data.numerical_id)
+    }
 }
 
-struct Item: Codable {
-    let id: Int
+struct Item: Codable, Hashable {
+    let id: String
+    let numerical_id: Int64
     let title: String?
-    let subtitle: String?
-    let date: String?
-    let body: String?
+    let short_plot: String?
+
+    let images: ItemImages?
+
+    struct ItemImages: Codable, Hashable {
+        let artwork: String
+        let snapshot: String
+    }
+
+    // should not be compared
+    static func == (lhs: Item, rhs: Item) -> Bool {
+        return false
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}
+
+struct StreamResponce: Codable {
+    let data: StreamData
+
+    struct StreamData: Codable {
+        let type: String
+        let id: String
+        let stream_infos: [StreamInfo]
+    }
+}
+
+struct StreamInfo: Codable {
+    let url: String
+    let video_quality: String
 }

@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "F4FB9D01-1F34-4372-A477-03BC19577033",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "mainThreadCheckerEnabled" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Homework.xcodeproj",
+      "identifier" : "C6EA05AE24217131002E0D65",
+      "name" : "Homework"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Homework.xcodeproj",
+        "identifier" : "C6EA05C424217133002E0D65",
+        "name" : "HomeworkTests"
+      }
+    }
+  ],
+  "version" : 1
+}

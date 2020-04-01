@@ -7,6 +7,11 @@
 //
 
 import Foundation
+import UIKit
+
+var isIpad: Bool {
+    return UIDevice.current.userInterfaceIdiom == .pad
+}
 
 protocol BaseView {
     associatedtype Model
@@ -16,7 +21,7 @@ protocol BaseView {
     var model: Model { get set }
 }
 
-class ChangeModel<T: Codable> {
+class ChangeModel<T: Hashable> {
     var data: T? = nil {
         didSet {
             DispatchQueue.main.async {
@@ -25,9 +30,9 @@ class ChangeModel<T: Codable> {
         }
     }
 
-    var didChange: (() -> ())? = nil
+    var didChange: (() -> Void)?
 
-    init(didChange: (() -> ())? = nil) {
+    init(didChange: (() -> Void)? = nil) {
         self.didChange = didChange
     }
 }

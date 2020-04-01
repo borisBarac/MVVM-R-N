@@ -9,11 +9,12 @@
 import XCTest
 @testable import Homework
 
-class NetworkingManagerTests: XCTestCase {
-
+class NetworkIntegrationTests: XCTestCase {
     var networkManager: NetworkManager!
     var session = URLSession(configuration: URLSessionConfiguration.default)
-    let testDetailId = 33
+
+    let listId = "estrenos-imprescindibles-en-taquilla"
+    let movieId = "matrix"
 
     override func setUp() {
         networkManager = NetworkManager(session: session)
@@ -23,40 +24,24 @@ class NetworkingManagerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testDetailUrl() {
-        let id = 36
-        let url = NetworkManager.EndPoints.detail(36).url
-        let contants = url?.absoluteString.contains(String(id))
-
-        XCTAssert(contants ?? false, "Could not build test url")
-    }
-
-    func testMainUrl() {
-        let url = NetworkManager.EndPoints.main.url
-
-        XCTAssertNotNil(url)
-    }
-
     func testMainJson() {
-        var main: MainJson? = nil
+        var main: ListJson? = nil
         let mainExpectation = expectation(description: "parsed main json to object")
 
-        guard let url = NetworkManager.EndPoints.main.url else {
-            XCTFail()
-            return
-        }
+        let url = NetworkManager.EndPoints.list(listId).url
 
-        networkManager.getJson(url: url) { (result: Result<MainJson, NetworkError>) in
+        networkManager.getJson(url: url) { (result: Result<ListJson, NetworkError>) in
             switch result {
             case .success(let object):
                 main = object
-                if object.items.count > 0 {
+                if object.data.contents.data.count > 0 {
                     mainExpectation.fulfill()
                 } else {
                     XCTFail("No items")
                 }
             case .failure(let error):
                 print(error.localizedDescription)
+                XCTFail("Network error")
             }
         }
 
@@ -66,19 +51,16 @@ class NetworkingManagerTests: XCTestCase {
     }
 
     func testDetailJson() {
-        var main: DetailJson? = nil
+        var detail: DetailJson? = nil
         let mainExpectation = expectation(description: "parsed detail json to object")
 
-        guard let url = NetworkManager.EndPoints.detail(testDetailId).url else {
-            XCTFail()
-            return
-        }
+        let url = NetworkManager.EndPoints.list(listId).url
 
         networkManager.getJson(url: url) { (result: Result<DetailJson, NetworkError>) in
             switch result {
             case .success(let object):
-                main = object
-                if main?.item.id != nil {
+                detail = object
+                if detail?.data.id != nil {
                     mainExpectation.fulfill()
                 } else {
                     XCTFail("Detail item not there")
@@ -90,7 +72,33 @@ class NetworkingManagerTests: XCTestCase {
         }
 
         waitForExpectations(timeout: 5) { error in
-            XCTAssertNotNil(main)
+            XCTAssertNotNil(detail)
+        }
+    }
+
+    func testStreamJson() {
+        var streamData: StreamResponce? = nil
+        let mainExpectation = expectation(description: "parsed stream data")
+
+        let url = NetworkManager.EndPoints.streamUrl(nil).url
+
+        networkManager.postJson(url: url, postBody: StreamPostBody(content_id: "matrix")) { (result: Result<StreamResponce, NetworkError>) in
+            switch result {
+            case .success(let object):
+                streamData = object
+                if streamData?.data.stream_infos.first?.url != nil {
+                    mainExpectation.fulfill()
+                } else {
+                    XCTFail("Stream data not there")
+                }
+
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+
+        waitForExpectations(timeout: 5) { error in
+            XCTAssertNotNil(streamData)
         }
     }
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 struct Route: Decodable, Encodable {
     enum PresentationStyle: String, Decodable, Encodable {
@@ -19,6 +20,7 @@ struct Route: Decodable, Encodable {
         case main
         case detail
         case error
+        case player
     }
 
     let routePath: RoutePath
@@ -53,10 +55,10 @@ final class Router {
         case canNotMakeRoot
     }
 
-    var topVC: UIViewController? {
+    var topViewController: UIViewController? {
         return UIApplication.topViewController()
     }
-    var lastRoute: Route? = nil
+    var lastRoute: Route?
     var rootVC: UIViewController {
         let root = (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController
 
@@ -66,13 +68,15 @@ final class Router {
         return root!
     }
 
-    // checks for logIn, local data, some upgrade option, what ever can be done here
+    /// checks for logIn, local data, some upgrade option, what ever can be done here
     func calculate(route: Route) throws -> Route {
         switch route.routePath {
         case .detail:
             return Route(routePath: .detail, presentationStyle: .push, embedInNavBar: false, parrentRoutePath: nil)
         case .main:
             return Route(routePath: .main, presentationStyle: .root, embedInNavBar: true, parrentRoutePath: nil)
+        case .player:
+            return Route(routePath: .player, presentationStyle: .pop, embedInNavBar: false, parrentRoutePath: nil)
         default:
             throw RouterError.canNotCalculateRoute
         }
@@ -89,12 +93,17 @@ final class Router {
             }
             let vc = DetailViewController(route: route, data: data)
             return (vc, route)
+        case .player:
+            guard let url = data as? URL else {
+                throw RouterError.castingData
+            }
+            return (makePlayerWith(url: url), route)
         default:
             throw RouterError.canNotMakeView
         }
     }
 
-    func showRoute(route: Route, data: Any?, completion: ((UIViewController?) -> ())? = nil) throws {
+    func showRoute(route: Route, data: Any?, completion: ((UIViewController?) -> Void)? = nil) throws {
         var (vc, newRoute) = try makeView(route: route, data: data)
 
         guard let unRoute = newRoute else {
@@ -107,7 +116,7 @@ final class Router {
 
         switch unRoute.presentationStyle {
         case .push:
-            if let navVC = topVC?.navigationController  {
+            if let navVC = topViewController?.navigationController {
                 navVC.pushViewController(vc, animated: true, completion: {
                     completion?(vc)
                 })
@@ -116,7 +125,7 @@ final class Router {
             }
             lastRoute = newRoute
         case .pop:
-            let presenting = topVC ?? rootVC
+            let presenting = topViewController ?? rootVC
             presenting.present(vc, animated: true, completion: {
                 self.lastRoute = newRoute
                 completion?(vc)
@@ -127,6 +136,25 @@ final class Router {
             lastRoute = newRoute
             completion?(vc)
         }
+    }
+
+    // MARK: - Helper
+    func makePlayerWith(url: URL) -> AVPlayerViewController {
+        let player = AVPlayer(url: url)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+
+        return playerViewController
+    }
+
+    func displayCancelingAlert(title: String, subTitle: String) {
+        guard isNotUnitTest else {
+            return
+        }
+
+        let alert = UIAlertController(title: title, message: subTitle, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.topViewController?.present(alert, animated: true, completion: nil)
     }
 
 }

@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import EasyPeasy
 
-final class MainViewController: UITableViewController, BaseView {
+final class MainViewController: UIViewController, BaseView {
     typealias Model = MainViewModel
 
     let cellReuseId = "MAIN_CELL"
@@ -17,62 +18,82 @@ final class MainViewController: UITableViewController, BaseView {
     var data: Any?
     var model: Model = Model()
 
+    var scrollView = UIScrollView()
+    var stackView = UIStackView()
+    var rows = [RowView]()
+
     init(route: Route?, data: Any?) {
         self.route = route
         self.data = data
-        super.init(style: .plain)
+        super.init(nibName: nil, bundle: nil)
 
         self.model = Model(didChange: modelChange)
 
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseId)
+        self.model.dataErrorBlock = { _ in
+            globalBootStrap.router.displayCancelingAlert(title: "ERROR", subTitle: "Could not load data")
+        }
+
+        setUpUI()
+        layoutUI()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.navigationBar.isTranslucent = false
+        navigationItem.title = "HOME"
+        let refreshButton = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
+        self.navigationItem.rightBarButtonItem = refreshButton
+    }
+
+
+    // MARK: - Actions
     func modelChange() {
-        guard isNotUnitTest else {
-            return
+        for listId in model.listIds {
+            rows[listId.getIndex].model.data?.items = model.data?[listId] ?? [Item]()
         }
-
-        tableView.reloadData()
     }
 
-    func openDetail(item: Item) {
+    @objc func refresh() {
+        model.reload()
     }
 
-    // MARK: - Table view data source
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.items.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseId, for: indexPath)
-
-        cell.setCellData(data: model.items[indexPath.row])
-        cell.textLabel?.textColor = .black
-        return cell
-    }
-
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item = model.items[indexPath.row]
+    private func openRow(item: Item) {
         do {
             try globalBootStrap.router.showRoute(route: Route(routePath: .detail), data: item)
         } catch {
-            print("Could not push details VC")
+            debugPrint("Could not open detail with item: \(item.id)")
         }
     }
-}
 
-private extension UITableViewCell {
-    func setCellData(data: Item) {
-        textLabel?.text = data.title ?? ""
+    // MARK: - UI functions
+    private func setUpUI() {
+        view.addSubview(scrollView)
+        scrollView.bounces = false
+        scrollView.addSubview(stackView)
+
+        stackView.spacing = 8
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
+
+        for listId in model.listIds {
+            let rowView = RowView()
+            rowView.openItem = openRow(item:)
+            rowView.model.data = MainRowModel(title: listId.title, items: [Item]())
+            rows.append(rowView)
+            stackView.addArrangedSubview(rowView)
+        }
     }
+
+    private func layoutUI() {
+        scrollView.easy.layout(Leading(8), Trailing(), Top(), Bottom())
+
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.easy.layout(Edges(),
+                              Width(-8).like(self.view))
+    }
+
 }
-
-
