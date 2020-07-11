@@ -16,29 +16,9 @@ class MainModelTests: XCTestCase {
 
     var model: MainViewModel!
 
-    private func stubTest(reqFail: Bool) {
-        stub(condition: isHost("gizmo.rakuten.tv") && pathStartsWith("/v3/lists/")) { _ in
-            guard let path = OHPathForFile("ListMock.json", type(of: self)) else {
-                    preconditionFailure("Could not find expected file in test bundle")
-            }
-
-            if reqFail == false {
-                return HTTPStubsResponse(fileAtPath: path,
-                                         statusCode: 200,
-                                         headers: ["Content-Type": "application/json"])
-            } else {
-                return HTTPStubsResponse(error: NSError(
-                    domain: "test",
-                    code: 42,
-                    userInfo: [:]))
-            }
-        }
-    }
-
     override func setUp() {
         // default
         stubTest(reqFail: false)
-
     }
 
     override func tearDown() {
@@ -90,4 +70,25 @@ class MainModelTests: XCTestCase {
         XCTAssertEqual(list4, .l1)
     }
 
+}
+// MARK: - Stubs
+extension MainModelTests {
+    private func stubTest(reqFail: Bool) {
+        stub(condition: isHost("gizmo.rakuten.tv") && pathStartsWith("/v3/lists/")) { _ in
+            guard let path = OHPathForFile("ListMock.json", type(of: self)) else {
+                    preconditionFailure("Could not find expected file in test bundle")
+            }
+
+            if reqFail == false {
+                return HTTPStubsResponse(fileAtPath: path,
+                                         statusCode: 200,
+                                         headers: ["Content-Type": "application/json"])
+            } else {
+                return HTTPStubsResponse(error: NSError(
+                    domain: "test",
+                    code: 42,
+                    userInfo: [:]))
+            }
+        }
+    }
 }

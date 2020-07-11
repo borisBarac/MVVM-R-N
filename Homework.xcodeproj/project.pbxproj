@@ -13,6 +13,7 @@
 		6B28B90024B9D5F20060EF2B /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B28B8FF24B9D5F20060EF2B /* TestUtilities.swift */; };
 		6B28B90324B9D67F0060EF2B /* DetailWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B28B90224B9D67F0060EF2B /* DetailWorkerMock.swift */; };
 		6B28B90524B9D9910060EF2B /* DetailWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B28B90424B9D9910060EF2B /* DetailWorkerTests.swift */; };
+		6B28B90724B9F5A30060EF2B /* ListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B28B90624B9F5A30060EF2B /* ListWorker.swift */; };
 		C629755A242BBF66006A5583 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6297559242BBF66006A5583 /* RowView.swift */; };
 		C6573B532422BEFD0029D2E5 /* DetailModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6573B522422BEFD0029D2E5 /* DetailModelTests.swift */; };
 		C6573B562422C56D0029D2E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6573B552422C56D0029D2E5 /* Extensions.swift */; };
@@ -72,6 +73,7 @@
 		6B28B8FF24B9D5F20060EF2B /* TestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtilities.swift; sourceTree = "<group>"; };
 		6B28B90224B9D67F0060EF2B /* DetailWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWorkerMock.swift; sourceTree = "<group>"; };
 		6B28B90424B9D9910060EF2B /* DetailWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWorkerTests.swift; sourceTree = "<group>"; };
+		6B28B90624B9F5A30060EF2B /* ListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorker.swift; sourceTree = "<group>"; };
 		C6297559242BBF66006A5583 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		C6573B522422BEFD0029D2E5 /* DetailModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModelTests.swift; sourceTree = "<group>"; };
 		C6573B552422C56D0029D2E5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				6B28B8FB24B9C98A0060EF2B /* BaseWorker.swift */,
 				6B28B8F824B9C79F0060EF2B /* DetailWorker.swift */,
 				6B28B8FD24B9CC0F0060EF2B /* StreamWorker.swift */,
+				6B28B90624B9F5A30060EF2B /* ListWorker.swift */,
 			);
 			path = Workers;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				6B28B8FC24B9C98A0060EF2B /* BaseWorker.swift in Sources */,
 				C6E8BB9F242B8FDC005FDA0F /* NetworkExtensions.swift in Sources */,
 				C68E659B2421AC9B00F61EDD /* DetailViewController.swift in Sources */,
+				6B28B90724B9F5A30060EF2B /* ListWorker.swift in Sources */,
 				C6EA05E92421961D002E0D65 /* MainViewController.swift in Sources */,
 				6B28B8FE24B9CC0F0060EF2B /* StreamWorker.swift in Sources */,
 				C6EA05B324217131002E0D65 /* AppDelegate.swift in Sources */,
