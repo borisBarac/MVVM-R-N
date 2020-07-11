@@ -13,27 +13,17 @@ import OHHTTPStubs
 @testable import Homework
 
 class DetailModelTests: XCTestCase {
-
     var model: DetailViewModel!
+    var detailWorkerMock: DetailWorkerMock!
 
     override func setUp() {
-        model = DetailViewModel()
-
-        // default stub
-        stub(condition: isHost("gizmo.rakuten.tv") && pathStartsWith("/v3/movies/")) { _ in
-            guard let path = OHPathForFile("DetailMock.json", type(of: self)) else {
-                preconditionFailure("Could not find expected file in test bundle")
-            }
-
-            return HTTPStubsResponse(fileAtPath: path,
-                                     statusCode: 200,
-                                     headers: ["Content-Type": "application/json"])
-        }
+        detailWorkerMock = DetailWorkerMock()
+        model = DetailViewModel(detailWorker: detailWorkerMock)
     }
-
 
     override func tearDown() {
         HTTPStubs.removeAllStubs()
+        detailWorkerMock.shouldReturnError = nil
     }
 
     func testDetailChange() {
@@ -50,13 +40,7 @@ class DetailModelTests: XCTestCase {
 
     func testDataErrorBlock() {
         var called = false
-
-        stub(condition: isHost("gizmo.rakuten.tv") && pathStartsWith("/v3/movies/")) { _ in
-            return HTTPStubsResponse(error: NSError(
-                domain: "test",
-                code: 42,
-                userInfo: [:]))
-        }
+        detailWorkerMock.shouldReturnError = .wrongParameters
 
         model.dataErrorBlock = { _ in
             called = true
