@@ -11,21 +11,17 @@ import Foundation
 typealias ItemDictionary = [MainViewModel.ListId: [Item]]
 
 final class MainViewModel: ChangeModel<ItemDictionary> {
-    var networkManager: NetworkManager
+    let listWorker: ListsWorkerProtocol
     var dataErrorBlock: ((NetworkError) -> Void)?
-    private var _reqInProgress = false
-    var reqInProgress: Bool {
-        return _reqInProgress
-    }
-
     let listIds: [ListId] = [.l1, .l2, .l3, .l4, .l5, .l6]
+
     func getItemsFor(list: ListId) -> [Item] {
         return data?[list] ?? [Item]()
     }
 
     init(didChange: (() -> Void)? = nil,
-                  networkManager: NetworkManager = globalBootStrap.networkManager) {
-        self.networkManager = networkManager
+                  listWorker: ListsWorkerProtocol = ListsWorker()) {
+        self.listWorker = listWorker
         super.init(didChange: didChange)
         buildData()
     }
@@ -36,38 +32,13 @@ final class MainViewModel: ChangeModel<ItemDictionary> {
     }
 
     private func buildData() {
-        guard _reqInProgress == false else {
-            return
-        }
-
-        var temp = ItemDictionary()
-        let dispatchGroup = DispatchGroup()
-        var reqResArr = [Bool]()
-
-        _reqInProgress = true
-        listIds.forEach { (listId) in
-            dispatchGroup.enter()
-            networkManager.getJson(url: NetworkManager.EndPoints.list(listId.rawValue).url) { (result: Result<ListJson, NetworkError>) in
-                switch result {
-                case .success(let object):
-                    reqResArr.append(true)
-                    temp[listId] = object.data.contents.data
-                case .failure(let error):
-                    print(error.localizedDescription)
-                    self.dataErrorBlock?(error)
-                }
-
-                dispatchGroup.leave()
+        listWorker.buildData(listIds: listIds) { result in
+            switch result {
+            case .success(let itemDictionary):
+                self.data = itemDictionary
+            case .failure(let error):
+                self.dataErrorBlock?(error)
             }
-        }
-
-        dispatchGroup.notify(queue: .main) {
-            guard reqResArr.count == self.listIds.count else {
-                return
-            }
-
-            self.data = temp
-            self._reqInProgress = false
         }
     }
 

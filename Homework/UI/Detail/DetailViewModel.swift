@@ -9,13 +9,15 @@
 import Foundation
 
 final class DetailViewModel: ChangeModel<Item> {
-    let networkManager: NetworkManager
+    let detailWorker: DetailWorkerProtocol
+    let streamWorker: StreamWorkerProtocol
     var dataErrorBlock: ((NetworkError) -> ())?
 
-    // item is in data of superclass
+    // item is in the data of the superclass
 
-    init(didChange: (() -> Void)? = nil, networkManager: NetworkManager = globalBootStrap.networkManager) {
-        self.networkManager = networkManager
+    init(didChange: (() -> Void)? = nil, detailWorker: DetailWorkerProtocol = DetailWorker(), streamWorker: StreamWorkerProtocol = StreamWorker()) {
+        self.detailWorker = detailWorker
+        self.streamWorker = streamWorker
         super.init(didChange: didChange)
 
     }
@@ -26,10 +28,10 @@ final class DetailViewModel: ChangeModel<Item> {
             return
         }
 
-        networkManager.getJson(url: NetworkManager.EndPoints.movie(movieId).url) { (result: Result<DetailJson, NetworkError>) in
+        detailWorker.getDetailsForItemWith(id: movieId) { (result: Result<Item, NetworkError>) in
             switch result {
             case .success(let object):
-                self.data = object.data
+                self.data = object
             case .failure(let error):
                 print(error.localizedDescription)
                 self.dataErrorBlock?(error)
@@ -43,8 +45,7 @@ final class DetailViewModel: ChangeModel<Item> {
             return
         }
 
-        let url = NetworkManager.EndPoints.streamUrl(nil).url
-        networkManager.postJson(url: url, postBody: StreamPostBody(content_id: movieId)) { (result: Result<StreamResponce, NetworkError>) in
+        streamWorker.getStreamUrlWith(id: movieId) { (result: Result<StreamResponce, NetworkError>) in
             switch result {
             case .success(let object):
                 if let urlString = object.data.stream_infos.first?.url, let url = URL(string: urlString) {
@@ -61,4 +62,5 @@ final class DetailViewModel: ChangeModel<Item> {
             }
         }
     }
+
 }

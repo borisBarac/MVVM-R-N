@@ -43,6 +43,8 @@ struct Route: Decodable, Encodable {
     }
 }
 
+/// This is a simple project, but for somehting big, we would have multiple Routers and a main one
+/// Router is the same thing like a presenter, but we have ROUTES as a base, that are based in HTTP Routes
 final class Router {
 
     enum RouterError: Error {
